@@ -6,3 +6,13 @@ $fa-font-path: '../webfonts';
 
 @import 'bootstrap/scss/bootstrap';
 
+.body{
+    height: 100vh;
+    // background: linear-gradient(90deg, rgba(255, 33, 251, 0.68), rgba(0, 21, 255, 0.76));
+    background: rgb(0,11,255);
+    background: linear-gradient(90deg, rgba(0,11,255,1) 0%, rgba(51,9,121,1) 35%, rgba(255,0,234,1) 100%);
+}
+
+.container{
+    height: 100vh;
+}
