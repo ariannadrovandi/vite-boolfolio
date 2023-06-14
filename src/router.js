@@ -6,12 +6,12 @@ import { createRouter, createWebHistory } from 'vue-router';
 		import ContactUs from './pages/ContactUs.vue';
 		import SingleProject from './pages/SingleProject.vue';
 		// facoltativo pag 404 !!in fondo!!
-		import Notfound from './pages/NotFound.vue';
+		import NotFound from './pages/NotFound.vue';
 		
 		
-		const router = createRouter({            //(createRouter crea un router vero e proprio)
-			history: createWebHistory(),         // mettiamo la createWebHistory per avere registrate le varie rotte nella history del browser
-			routes: [                            // mettiamo routes (oggetto) e ne creiamo una per ogni nostra pagina 
+		const router = createRouter({            
+			history: createWebHistory(),        
+			routes: [                             
 				{
 					path: '/',
 					name: 'home', //facoltativo
