@@ -9,12 +9,12 @@
             </div>
     
             <nav aria-label="Page navigation example">
-            <ul class="pagination">
-            <li class="page-item"><button :class="{ 'page-link': true, 'disabled': currentPage === 1 }" @click="getData(currentPage - 1)">Previous</button></li>
-            <li class="page-item" v-for="n in lastPage"><button :class="{ 'page-link': true, 'active': currentPage === n }" @click="getData(n)">{{ n }}</button></li>
-            <li class="page-item"><button :class="{ 'page-link': true, 'disabled': currentPage === 4 }" @click="getData(currentPage + 1)">Next</button></li>
-            </ul>
-        </nav>
+                <ul class="pagination">
+                    <li class="page-item"><button :class="{ 'page-link': true, 'disabled': currentPage === 1 }" @click="getData(currentPage - 1)">Previous</button></li>
+                    <li class="page-item" v-for="n in lastPage"><button :class="{ 'page-link': true, 'active': currentPage === n }" @click="getData(n)">{{ n }}</button></li>
+                    <li class="page-item"><button :class="{ 'page-link': true, 'disabled': currentPage === 4 }" @click="getData(currentPage + 1)">Next</button></li>
+                </ul>
+            </nav>
     
         </div>
     </div>
